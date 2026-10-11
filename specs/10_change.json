@@ -1,0 +1,74 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": "transparent",
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "font": "DM Sans, sans-serif",
+    "axis": {
+      "labelColor": "#d2dddf",
+      "titleColor": "#d2dddf",
+      "gridColor": "#304449",
+      "labelFontSize": 11
+    },
+    "legend": {
+      "labelColor": "#d2dddf",
+      "titleColor": "#d2dddf"
+    }
+  },
+  "width": "container",
+  "height": 285,
+  "data": {
+    "url": "data/state-series.json"
+  },
+  "transform": [
+    {
+      "filter": "datum.year == 2015 || datum.year == 2025"
+    }
+  ],
+  "mark": {
+    "type": "line",
+    "point": {
+      "filled": true,
+      "size": 85
+    },
+    "strokeWidth": 3
+  },
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "ordinal",
+      "title": null
+    },
+    "y": {
+      "field": "share",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          0,
+          100
+        ]
+      },
+      "title": "Renewable share (%)"
+    },
+    "color": {
+      "field": "region",
+      "type": "nominal",
+      "title": "State"
+    },
+    "tooltip": [
+      {
+        "field": "state"
+      },
+      {
+        "field": "year"
+      },
+      {
+        "field": "share",
+        "title": "Renewables (%)",
+        "format": ".1f"
+      }
+    ]
+  }
+}

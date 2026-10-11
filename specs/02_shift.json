@@ -1,0 +1,98 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": "transparent",
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "font": "Inter, sans-serif",
+    "axis": {
+      "labelColor": "#d2dddf",
+      "titleColor": "#d2dddf",
+      "gridColor": "#304449"
+    },
+    "legend": {
+      "labelColor": "#d2dddf",
+      "titleColor": "#d2dddf"
+    }
+  },
+  "width": "container",
+  "height": 260,
+  "data": {
+    "values": [
+      {
+        "year": "2024",
+        "group": "Renewable",
+        "share": 35.7
+      },
+      {
+        "year": "2025",
+        "group": "Renewable",
+        "share": 39.5
+      },
+      {
+        "year": "2024",
+        "group": "Fossil",
+        "share": 64.3
+      },
+      {
+        "year": "2025",
+        "group": "Fossil",
+        "share": 60.5
+      }
+    ]
+  },
+  "mark": {
+    "type": "line",
+    "point": {
+      "filled": true,
+      "size": 130
+    },
+    "strokeWidth": 4
+  },
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "ordinal",
+      "title": null
+    },
+    "y": {
+      "field": "share",
+      "type": "quantitative",
+      "title": "Share of total generation (%)",
+      "scale": {
+        "domain": [
+          30,
+          70
+        ]
+      }
+    },
+    "color": {
+      "field": "group",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "Fossil",
+          "Renewable"
+        ],
+        "range": [
+          "#da8265",
+          "#80d5a8"
+        ]
+      },
+      "title": null
+    },
+    "tooltip": [
+      {
+        "field": "year"
+      },
+      {
+        "field": "group"
+      },
+      {
+        "field": "share",
+        "title": "Share (%)"
+      }
+    ]
+  }
+}

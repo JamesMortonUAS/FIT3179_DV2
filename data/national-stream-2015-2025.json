@@ -1,0 +1,530 @@
+[
+  {
+    "year": 2015,
+    "source": "Black coal",
+    "order": 0,
+    "twh": 111.655
+  },
+  {
+    "year": 2015,
+    "source": "Brown coal",
+    "order": 1,
+    "twh": 50.548
+  },
+  {
+    "year": 2015,
+    "source": "Gas",
+    "order": 2,
+    "twh": 49.706
+  },
+  {
+    "year": 2015,
+    "source": "Oil",
+    "order": 3,
+    "twh": 6.162
+  },
+  {
+    "year": 2015,
+    "source": "Biomass",
+    "order": 4,
+    "twh": 3.678
+  },
+  {
+    "year": 2015,
+    "source": "Hydro",
+    "order": 5,
+    "twh": 14.208
+  },
+  {
+    "year": 2015,
+    "source": "Wind",
+    "order": 6,
+    "twh": 11.833
+  },
+  {
+    "year": 2015,
+    "source": "Solar",
+    "order": 7,
+    "twh": 6.196
+  },
+  {
+    "year": 2016,
+    "source": "Black coal",
+    "order": 0,
+    "twh": 115.366
+  },
+  {
+    "year": 2016,
+    "source": "Brown coal",
+    "order": 1,
+    "twh": 46.991
+  },
+  {
+    "year": 2016,
+    "source": "Gas",
+    "order": 2,
+    "twh": 48.11
+  },
+  {
+    "year": 2016,
+    "source": "Oil",
+    "order": 3,
+    "twh": 5.718
+  },
+  {
+    "year": 2016,
+    "source": "Biomass",
+    "order": 4,
+    "twh": 3.627
+  },
+  {
+    "year": 2016,
+    "source": "Hydro",
+    "order": 5,
+    "twh": 17.926
+  },
+  {
+    "year": 2016,
+    "source": "Wind",
+    "order": 6,
+    "twh": 13.04
+  },
+  {
+    "year": 2016,
+    "source": "Solar",
+    "order": 7,
+    "twh": 7.44
+  },
+  {
+    "year": 2017,
+    "source": "Black coal",
+    "order": 0,
+    "twh": 120.892
+  },
+  {
+    "year": 2017,
+    "source": "Brown coal",
+    "order": 1,
+    "twh": 38.277
+  },
+  {
+    "year": 2017,
+    "source": "Gas",
+    "order": 2,
+    "twh": 55.088
+  },
+  {
+    "year": 2017,
+    "source": "Oil",
+    "order": 3,
+    "twh": 5.273
+  },
+  {
+    "year": 2017,
+    "source": "Biomass",
+    "order": 4,
+    "twh": 3.561
+  },
+  {
+    "year": 2017,
+    "source": "Hydro",
+    "order": 5,
+    "twh": 13.748
+  },
+  {
+    "year": 2017,
+    "source": "Wind",
+    "order": 6,
+    "twh": 13.211
+  },
+  {
+    "year": 2017,
+    "source": "Solar",
+    "order": 7,
+    "twh": 8.918
+  },
+  {
+    "year": 2018,
+    "source": "Black coal",
+    "order": 0,
+    "twh": 120.594
+  },
+  {
+    "year": 2018,
+    "source": "Brown coal",
+    "order": 1,
+    "twh": 35.961
+  },
+  {
+    "year": 2018,
+    "source": "Gas",
+    "order": 2,
+    "twh": 51.465
+  },
+  {
+    "year": 2018,
+    "source": "Oil",
+    "order": 3,
+    "twh": 4.901
+  },
+  {
+    "year": 2018,
+    "source": "Biomass",
+    "order": 4,
+    "twh": 3.588
+  },
+  {
+    "year": 2018,
+    "source": "Hydro",
+    "order": 5,
+    "twh": 17.528
+  },
+  {
+    "year": 2018,
+    "source": "Wind",
+    "order": 6,
+    "twh": 16.262
+  },
+  {
+    "year": 2018,
+    "source": "Solar",
+    "order": 7,
+    "twh": 12.332
+  },
+  {
+    "year": 2019,
+    "source": "Black coal",
+    "order": 0,
+    "twh": 116.619
+  },
+  {
+    "year": 2019,
+    "source": "Brown coal",
+    "order": 1,
+    "twh": 33.222
+  },
+  {
+    "year": 2019,
+    "source": "Gas",
+    "order": 2,
+    "twh": 55.711
+  },
+  {
+    "year": 2019,
+    "source": "Oil",
+    "order": 3,
+    "twh": 4.727
+  },
+  {
+    "year": 2019,
+    "source": "Biomass",
+    "order": 4,
+    "twh": 3.468
+  },
+  {
+    "year": 2019,
+    "source": "Hydro",
+    "order": 5,
+    "twh": 14.386
+  },
+  {
+    "year": 2019,
+    "source": "Wind",
+    "order": 6,
+    "twh": 19.472
+  },
+  {
+    "year": 2019,
+    "source": "Solar",
+    "order": 7,
+    "twh": 18.297
+  },
+  {
+    "year": 2020,
+    "source": "Black coal",
+    "order": 0,
+    "twh": 108.741
+  },
+  {
+    "year": 2020,
+    "source": "Brown coal",
+    "order": 1,
+    "twh": 34.194
+  },
+  {
+    "year": 2020,
+    "source": "Gas",
+    "order": 2,
+    "twh": 53.053
+  },
+  {
+    "year": 2020,
+    "source": "Oil",
+    "order": 3,
+    "twh": 4.505
+  },
+  {
+    "year": 2020,
+    "source": "Biomass",
+    "order": 4,
+    "twh": 3.41
+  },
+  {
+    "year": 2020,
+    "source": "Hydro",
+    "order": 5,
+    "twh": 14.807
+  },
+  {
+    "year": 2020,
+    "source": "Wind",
+    "order": 6,
+    "twh": 22.607
+  },
+  {
+    "year": 2020,
+    "source": "Solar",
+    "order": 7,
+    "twh": 23.845
+  },
+  {
+    "year": 2021,
+    "source": "Black coal",
+    "order": 0,
+    "twh": 103.756
+  },
+  {
+    "year": 2021,
+    "source": "Brown coal",
+    "order": 1,
+    "twh": 33.471
+  },
+  {
+    "year": 2021,
+    "source": "Gas",
+    "order": 2,
+    "twh": 47.129
+  },
+  {
+    "year": 2021,
+    "source": "Oil",
+    "order": 3,
+    "twh": 4.682
+  },
+  {
+    "year": 2021,
+    "source": "Biomass",
+    "order": 4,
+    "twh": 3.373
+  },
+  {
+    "year": 2021,
+    "source": "Hydro",
+    "order": 5,
+    "twh": 16.436
+  },
+  {
+    "year": 2021,
+    "source": "Wind",
+    "order": 6,
+    "twh": 26.83
+  },
+  {
+    "year": 2021,
+    "source": "Solar",
+    "order": 7,
+    "twh": 30.556
+  },
+  {
+    "year": 2022,
+    "source": "Black coal",
+    "order": 0,
+    "twh": 97.319
+  },
+  {
+    "year": 2022,
+    "source": "Brown coal",
+    "order": 1,
+    "twh": 31.921
+  },
+  {
+    "year": 2022,
+    "source": "Gas",
+    "order": 2,
+    "twh": 51.24
+  },
+  {
+    "year": 2022,
+    "source": "Oil",
+    "order": 3,
+    "twh": 4.778
+  },
+  {
+    "year": 2022,
+    "source": "Biomass",
+    "order": 4,
+    "twh": 3.247
+  },
+  {
+    "year": 2022,
+    "source": "Hydro",
+    "order": 5,
+    "twh": 17.421
+  },
+  {
+    "year": 2022,
+    "source": "Wind",
+    "order": 6,
+    "twh": 30.125
+  },
+  {
+    "year": 2022,
+    "source": "Solar",
+    "order": 7,
+    "twh": 37.024
+  },
+  {
+    "year": 2023,
+    "source": "Black coal",
+    "order": 0,
+    "twh": 94.191
+  },
+  {
+    "year": 2023,
+    "source": "Brown coal",
+    "order": 1,
+    "twh": 31.647
+  },
+  {
+    "year": 2023,
+    "source": "Gas",
+    "order": 2,
+    "twh": 46.864
+  },
+  {
+    "year": 2023,
+    "source": "Oil",
+    "order": 3,
+    "twh": 4.826
+  },
+  {
+    "year": 2023,
+    "source": "Biomass",
+    "order": 4,
+    "twh": 3.278
+  },
+  {
+    "year": 2023,
+    "source": "Hydro",
+    "order": 5,
+    "twh": 16.004
+  },
+  {
+    "year": 2023,
+    "source": "Wind",
+    "order": 6,
+    "twh": 31.897
+  },
+  {
+    "year": 2023,
+    "source": "Solar",
+    "order": 7,
+    "twh": 44.413
+  },
+  {
+    "year": 2024,
+    "source": "Black coal",
+    "order": 0,
+    "twh": 96.151
+  },
+  {
+    "year": 2024,
+    "source": "Brown coal",
+    "order": 1,
+    "twh": 31.408
+  },
+  {
+    "year": 2024,
+    "source": "Gas",
+    "order": 2,
+    "twh": 48.976
+  },
+  {
+    "year": 2024,
+    "source": "Oil",
+    "order": 3,
+    "twh": 4.848
+  },
+  {
+    "year": 2024,
+    "source": "Biomass",
+    "order": 4,
+    "twh": 3.451
+  },
+  {
+    "year": 2024,
+    "source": "Hydro",
+    "order": 5,
+    "twh": 14.16
+  },
+  {
+    "year": 2024,
+    "source": "Wind",
+    "order": 6,
+    "twh": 33.261
+  },
+  {
+    "year": 2024,
+    "source": "Solar",
+    "order": 7,
+    "twh": 50.055
+  },
+  {
+    "year": 2025,
+    "source": "Black coal",
+    "order": 0,
+    "twh": 92.733
+  },
+  {
+    "year": 2025,
+    "source": "Brown coal",
+    "order": 1,
+    "twh": 29.623
+  },
+  {
+    "year": 2025,
+    "source": "Gas",
+    "order": 2,
+    "twh": 46.337
+  },
+  {
+    "year": 2025,
+    "source": "Oil",
+    "order": 3,
+    "twh": 4.785
+  },
+  {
+    "year": 2025,
+    "source": "Biomass",
+    "order": 4,
+    "twh": 3.348
+  },
+  {
+    "year": 2025,
+    "source": "Hydro",
+    "order": 5,
+    "twh": 13.484
+  },
+  {
+    "year": 2025,
+    "source": "Wind",
+    "order": 6,
+    "twh": 40.247
+  },
+  {
+    "year": 2025,
+    "source": "Solar",
+    "order": 7,
+    "twh": 56.21
+  }
+]

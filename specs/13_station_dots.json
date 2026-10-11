@@ -1,0 +1,111 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": "transparent",
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "font": "DM Sans, sans-serif",
+    "axis": {
+      "labelColor": "#d2dddf",
+      "titleColor": "#d2dddf",
+      "gridColor": "#304449",
+      "labelFontSize": 11
+    },
+    "legend": {
+      "labelColor": "#d2dddf",
+      "titleColor": "#d2dddf"
+    }
+  },
+  "width": "container",
+  "height": 375,
+  "projection": {
+    "type": "mercator",
+    "center": [
+      134,
+      -27
+    ],
+    "scale": 510
+  },
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/rowanhogan/australian-states/master/states.min.geojson",
+        "format": {
+          "type": "json",
+          "property": "features"
+        }
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "#294045",
+        "stroke": "#718582",
+        "strokeWidth": 1
+      }
+    },
+    {
+      "data": {
+        "url": "data/major-stations-100mw.json"
+      },
+      "mark": {
+        "type": "circle",
+        "size": 35,
+        "opacity": 0.78,
+        "stroke": "#071a20",
+        "strokeWidth": 0.5
+      },
+      "encoding": {
+        "longitude": {
+          "field": "longitude",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "latitude",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "fuel",
+          "type": "nominal",
+          "title": "Primary fuel",
+          "scale": {
+            "domain": [
+              "Fossil",
+              "Wind",
+              "Solar",
+              "Water",
+              "Biomass Or Waste",
+              "Wind/solar"
+            ],
+            "range": [
+              "#da8265",
+              "#7ed4a7",
+              "#f6be77",
+              "#78bce0",
+              "#ad95bf",
+              "#d1e785"
+            ]
+          }
+        },
+        "tooltip": [
+          {
+            "field": "name",
+            "title": "Station"
+          },
+          {
+            "field": "fuel",
+            "title": "Primary fuel"
+          },
+          {
+            "field": "capacity_mw",
+            "title": "Capacity (MW)",
+            "format": ",.0f"
+          },
+          {
+            "field": "state",
+            "title": "State"
+          }
+        ]
+      }
+    }
+  ]
+}

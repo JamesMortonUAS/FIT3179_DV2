@@ -1,0 +1,68 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": "transparent",
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "font": "DM Sans, sans-serif",
+    "axis": {
+      "labelColor": "#d2dddf",
+      "titleColor": "#d2dddf",
+      "gridColor": "#304449",
+      "labelFontSize": 11
+    },
+    "legend": {
+      "labelColor": "#d2dddf",
+      "titleColor": "#d2dddf"
+    }
+  },
+  "width": "container",
+  "height": 270,
+  "data": {
+    "url": "data/generation-cy.json"
+  },
+  "transform": [
+    {
+      "filter": "datum.year == 2025 && datum.region != \"AUS\" && (datum.fuel == \"Wind\" || datum.fuel == \"Hydro\" || datum.fuel == \"Large-scale solar PV\" || datum.fuel == \"Small-scale solar PV\")"
+    },
+    {
+      "calculate": "datum.gwh / 1000",
+      "as": "twh"
+    }
+  ],
+  "mark": "rect",
+  "encoding": {
+    "x": {
+      "field": "region",
+      "type": "nominal",
+      "title": null
+    },
+    "y": {
+      "field": "fuel",
+      "type": "nominal",
+      "title": null
+    },
+    "color": {
+      "field": "twh",
+      "type": "quantitative",
+      "scale": {
+        "scheme": "greenblue"
+      },
+      "title": "TWh"
+    },
+    "tooltip": [
+      {
+        "field": "region"
+      },
+      {
+        "field": "fuel"
+      },
+      {
+        "field": "twh",
+        "title": "TWh",
+        "format": ".2f"
+      }
+    ]
+  }
+}

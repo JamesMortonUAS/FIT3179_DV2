@@ -1,0 +1,73 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": "transparent",
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "font": "Inter, sans-serif",
+    "axis": {
+      "labelColor": "#d2dddf",
+      "titleColor": "#d2dddf",
+      "gridColor": "#304449"
+    },
+    "legend": {
+      "labelColor": "#d2dddf",
+      "titleColor": "#d2dddf"
+    }
+  },
+  "width": "container",
+  "height": 260,
+  "data": {
+    "url": "data/national-2025.json"
+  },
+  "mark": {
+    "type": "bar",
+    "cornerRadiusEnd": 3
+  },
+  "encoding": {
+    "y": {
+      "field": "fuel",
+      "type": "nominal",
+      "sort": {
+        "field": "order"
+      },
+      "title": null
+    },
+    "x": {
+      "field": "share",
+      "type": "quantitative",
+      "title": "Share of total generation (%)",
+      "scale": {
+        "domain": [
+          0,
+          50
+        ]
+      }
+    },
+    "color": {
+      "field": "group",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "Fossil",
+          "Renewable"
+        ],
+        "range": [
+          "#da8265",
+          "#80d5a8"
+        ]
+      },
+      "legend": null
+    },
+    "tooltip": [
+      {
+        "field": "fuel"
+      },
+      {
+        "field": "share",
+        "title": "Share (%)"
+      }
+    ]
+  }
+}

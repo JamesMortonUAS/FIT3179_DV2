@@ -1,0 +1,109 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": "transparent",
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "font": "DM Sans, sans-serif",
+    "axis": {
+      "labelColor": "#d2dddf",
+      "titleColor": "#d2dddf",
+      "gridColor": "#304449",
+      "labelFontSize": 11
+    },
+    "legend": {
+      "labelColor": "#d2dddf",
+      "titleColor": "#d2dddf"
+    }
+  },
+  "width": "container",
+  "height": 340,
+  "data": {
+    "url": "data/national-stream-2015-2025.json"
+  },
+  "mark": {
+    "type": "area",
+    "interpolate": "monotone",
+    "opacity": 0.94
+  },
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          2015,
+          2025
+        ]
+      },
+      "axis": {
+        "format": "d",
+        "tickMinStep": 1
+      },
+      "title": null
+    },
+    "y": {
+      "field": "twh",
+      "type": "quantitative",
+      "stack": "center",
+      "title": "Electricity generation (TWh, centred)"
+    },
+    "color": {
+      "field": "source",
+      "type": "nominal",
+      "sort": [
+        "Black coal",
+        "Brown coal",
+        "Gas",
+        "Oil",
+        "Biomass",
+        "Hydro",
+        "Wind",
+        "Solar"
+      ],
+      "scale": {
+        "domain": [
+          "Black coal",
+          "Brown coal",
+          "Gas",
+          "Oil",
+          "Biomass",
+          "Hydro",
+          "Wind",
+          "Solar"
+        ],
+        "range": [
+          "#bf6b52",
+          "#de9377",
+          "#f3bb81",
+          "#c7ab9c",
+          "#b4bd7a",
+          "#75b6dc",
+          "#6fc9ac",
+          "#e6d767"
+        ]
+      },
+      "title": "Generation source"
+    },
+    "order": {
+      "field": "order",
+      "type": "quantitative"
+    },
+    "tooltip": [
+      {
+        "field": "year",
+        "type": "quantitative",
+        "format": "d"
+      },
+      {
+        "field": "source"
+      },
+      {
+        "field": "twh",
+        "title": "Generation (TWh)",
+        "format": ".1f"
+      }
+    ]
+  }
+}

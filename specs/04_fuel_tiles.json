@@ -1,0 +1,64 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": "transparent",
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "font": "Inter, sans-serif",
+    "axis": {
+      "labelColor": "#d2dddf",
+      "titleColor": "#d2dddf",
+      "gridColor": "#304449"
+    },
+    "legend": {
+      "labelColor": "#d2dddf",
+      "titleColor": "#d2dddf"
+    }
+  },
+  "width": "container",
+  "height": 210,
+  "data": {
+    "url": "data/national-2025.json"
+  },
+  "mark": {
+    "type": "rect",
+    "stroke": "#102127",
+    "strokeWidth": 3
+  },
+  "encoding": {
+    "x": {
+      "field": "fuel",
+      "type": "nominal",
+      "sort": {
+        "field": "order"
+      },
+      "axis": {
+        "labelAngle": -30
+      },
+      "title": null
+    },
+    "y": {
+      "field": "group",
+      "type": "nominal",
+      "title": null
+    },
+    "color": {
+      "field": "share",
+      "type": "quantitative",
+      "scale": {
+        "scheme": "yellowgreenblue"
+      },
+      "title": "Share (%)"
+    },
+    "tooltip": [
+      {
+        "field": "fuel"
+      },
+      {
+        "field": "share",
+        "title": "Share (%)"
+      }
+    ]
+  }
+}

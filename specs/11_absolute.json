@@ -1,0 +1,58 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": "transparent",
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "font": "DM Sans, sans-serif",
+    "axis": {
+      "labelColor": "#d2dddf",
+      "titleColor": "#d2dddf",
+      "gridColor": "#304449",
+      "labelFontSize": 11
+    },
+    "legend": {
+      "labelColor": "#d2dddf",
+      "titleColor": "#d2dddf"
+    }
+  },
+  "width": "container",
+  "height": 270,
+  "data": {
+    "url": "data/state-series.json"
+  },
+  "transform": [
+    {
+      "filter": "datum.year == 2025"
+    }
+  ],
+  "mark": {
+    "type": "bar",
+    "cornerRadiusEnd": 3,
+    "color": "#edb66d"
+  },
+  "encoding": {
+    "y": {
+      "field": "region",
+      "type": "nominal",
+      "sort": "-x",
+      "title": null
+    },
+    "x": {
+      "field": "total_gwh",
+      "type": "quantitative",
+      "title": "Generation (GWh)"
+    },
+    "tooltip": [
+      {
+        "field": "state"
+      },
+      {
+        "field": "total_gwh",
+        "title": "Generation (GWh)",
+        "format": ",.0f"
+      }
+    ]
+  }
+}

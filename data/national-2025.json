@@ -1,0 +1,44 @@
+[
+  {
+    "fuel": "Coal",
+    "share": 42.67,
+    "gwh": 122355.99,
+    "group": "Fossil",
+    "order": 1
+  },
+  {
+    "fuel": "Other fossil",
+    "share": 17.83,
+    "gwh": 51121.27,
+    "group": "Fossil",
+    "order": 2
+  },
+  {
+    "fuel": "Solar",
+    "share": 19.6,
+    "gwh": 56210.12,
+    "group": "Renewable",
+    "order": 3
+  },
+  {
+    "fuel": "Wind",
+    "share": 14.03,
+    "gwh": 40246.98,
+    "group": "Renewable",
+    "order": 4
+  },
+  {
+    "fuel": "Hydro",
+    "share": 4.7,
+    "gwh": 13484.0,
+    "group": "Renewable",
+    "order": 5
+  },
+  {
+    "fuel": "Other renewable",
+    "share": 1.17,
+    "gwh": 3347.87,
+    "group": "Renewable",
+    "order": 6
+  }
+]
