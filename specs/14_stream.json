@@ -46,8 +46,8 @@
     "y": {
       "field": "twh",
       "type": "quantitative",
-      "stack": "center",
-      "title": "Electricity generation (TWh, centred)"
+      "stack": "zero",
+      "title": "Electricity generation (TWh)"
     },
     "color": {
       "field": "source",
