@@ -6,7 +6,7 @@ An interactive, single-page data story about how Australia's electricity generat
 
 https://jamesmortonuas.github.io/FIT3179_DV2/
 
-The final dashboard contains 14 Vega-Lite visualisations, including a streamgraph and three distinct map idioms, presented as a responsive single-page data story.
+The final dashboard contains 14 Vega-Lite visualisations, including a zero-based stacked-area chart and three distinct map idioms, presented as a responsive single-page data story.
 
 ## Repository structure
 
