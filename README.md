@@ -2,11 +2,11 @@
 
 An interactive, single-page data story about how Australia's electricity generation mix is changing.
 
-## Live draft
+## Live site
 
 https://jamesmortonuas.github.io/FIT3179_DV2/
 
-This public draft is intended for the FIT2179 Week 11 peer-and-tutor critique. It contains 14 Vega-Lite specifications, more than ten visualisations, a streamgraph, and three distinct map idioms.
+The final dashboard contains 14 Vega-Lite visualisations, including a streamgraph and three distinct map idioms, presented as a responsive single-page data story.
 
 ## Repository structure
 
@@ -45,10 +45,10 @@ The site is deployed automatically whenever `main` is updated.
 
 The dashboard distinguishes source data, derived measures and design interpretation in its methods and source sections.
 
-## Current draft status
+## Publication status
 
-The core narrative, layout, typography, colour system, map treatments and interactive tooltips are ready for critique. Remaining work is to complete the required hand-drawn sketch, incorporate feedback, and perform the final accessibility and submission-template checks.
+The dashboard is published through GitHub Pages and updates automatically when the `main` branch changes. The final page includes the complete narrative, responsive layout, source notes, map treatments and interactive tooltips.
 
 ## AI acknowledgement
 
-AI assisted with layout and code development. Its use will be acknowledged in the submitted assignment template in accordance with the unit requirements.
+AI assisted with layout and code development. This contribution is acknowledged here and should also be recorded in the submitted assignment template in accordance with the unit requirements.
