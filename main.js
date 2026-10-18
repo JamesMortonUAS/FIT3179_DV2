@@ -95,7 +95,7 @@ function usePreparedBoundaries(spec, features) {
 // preventing the rest of the data story from rendering.
 for (const [id, name] of items) {
   const isMap = id.startsWith('map-');
-  const spec = fetch(`specs/${name}.json?v=20261019`, { cache: 'no-store' }).then(response => {
+  const spec = fetch(`specs/${name}.json?v=20261018b`, { cache: 'no-store' }).then(response => {
     if (!response.ok) throw new Error(`Chart specification: HTTP ${response.status}`);
     return response.json();
   });
