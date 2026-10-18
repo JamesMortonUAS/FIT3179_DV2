@@ -20,12 +20,7 @@
   "width": "container",
   "height": 375,
   "projection": {
-    "type": "mercator",
-    "center": [
-      134,
-      -27
-    ],
-    "scale": 510
+    "type": "equalEarth"
   },
   "data": {
     "url": "https://raw.githubusercontent.com/rowanhogan/australian-states/master/states.min.geojson",
@@ -85,5 +80,6 @@
         "format": ".1f"
       }
     ]
-  }
+  },
+  "description": "Equal-area choropleth of state renewable shares in 2025."
 }

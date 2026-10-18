@@ -20,12 +20,7 @@
   "width": "container",
   "height": 375,
   "projection": {
-    "type": "mercator",
-    "center": [
-      134,
-      -27
-    ],
-    "scale": 510
+    "type": "equalEarth"
   },
   "layer": [
     {
@@ -89,5 +84,6 @@
         ]
       }
     }
-  ]
+  ],
+  "description": "Equal-area proportional-symbol map of total state electricity generation in 2025."
 }

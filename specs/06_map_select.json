@@ -20,12 +20,7 @@
   "width": "container",
   "height": 375,
   "projection": {
-    "type": "mercator",
-    "center": [
-      134,
-      -27
-    ],
-    "scale": 510
+    "type": "equalEarth"
   },
   "data": {
     "url": "https://raw.githubusercontent.com/rowanhogan/australian-states/master/states.min.geojson",
@@ -77,5 +72,6 @@
         "format": ".1f"
       }
     ]
-  }
+  },
+  "description": "Equal-area categorical map showing whether each state reached 50% renewable generation in 2025."
 }

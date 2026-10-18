@@ -1,34 +1,38 @@
-# Week 11 critique readiness
+# Final visualisation audit
 
-The critique is worth 4% and must be completed during the Week 11 studio. A
-public GitHub draft is a hurdle requirement.
+This checklist follows the unit's critique priority: accuracy first, then data/idiom choice, chart design, colour, layout and typography.
 
-## Before posting the URL to the group forum
+## Accuracy and interpretation
 
-- [ ] The GitHub Pages URL works in an incognito window.
-- [ ] The draft contains a substantial number of rendered diagrams, not only
-      placeholders or a small number of basic charts.
-- [ ] At least three different map idioms are visible.
-- [ ] The four-section story is understandable from the headings and captions.
-- [ ] Layout, typography and colour are developed enough to critique.
-- [ ] All quantitative colour scales use lightness or saturation rather than
-      unrelated hues.
-- [ ] Relative values are used when comparisons would be distorted by country
-      or state size; absolute values are retained only where magnitude is the
-      intended message.
-- [ ] Axes, geographic areas and marks do not visually exaggerate differences.
-- [ ] Data sources and dates are visible.
-- [ ] The sketch link works.
+- [x] Figure 02 uses a complete 0–100% scale, so a 3.8 percentage-point movement is not visually exaggerated.
+- [x] Figure 03 is a zero-based stacked area chart; band thickness represents TWh and black coal begins at zero.
+- [x] Annual observations in Figure 03 use straight interpolation rather than a smoothed curve that could imply unobserved values.
+- [x] The station map calls the source category `Water` “Hydro” in the display and documents the relabelling.
+- [x] Generation share (%), annual energy (GWh/TWh) and station capacity (MW) are distinguished in the narrative.
+- [x] ACT treatment is disclosed: Table O includes it within NSW.
+- [x] Map 04 says its state-centre points are indicative rather than station locations.
 
-## Preparing to critique another student's work
+## Idioms and brief coverage
 
-Prepare at least four substantial suggestions, ordered from most to least
-important. Cover major accuracy problems first, followed by idiom/data choice,
-chart design, colour, layout and typography. The spoken critique must fit
-within two minutes; going overtime receives zero for presentation.
+- [x] Four map idioms: continuous choropleth, threshold/categorical map, proportional symbols and station points.
+- [x] Australian maps use an equal-area projection.
+- [x] Fourteen Vega-Lite visualisations exceed the ten-chart minimum.
+- [x] More than two data sources are combined and credited.
+- [x] The page is a public, scrolling GitHub Pages data story.
+- [x] Vega-Lite JSON files are readable in `specs/`.
+- [x] Tooltips expose exact values without replacing the written story.
 
-## Current repository status
+## Design and usability
 
-The visual design and chart positions are established, but the repository is
-not critique-ready until the placeholders have been replaced with rendered
-Vega/Vega-Lite diagrams and real data.
+- [x] A consistent palette groups fossil sources in warm colours and renewable sources in greens/blues/yellow.
+- [x] Headings state the intended takeaway; captions state scope and units.
+- [x] Responsive container widths support desktop and smaller screens.
+- [x] Source dates, author, AI acknowledgement and limitations are visible.
+- [ ] Add the approved hand-drawn sketch as `docs/sketch.pdf` and link it from the assignment template.
+
+## Final manual checks
+
+- Open the live URL in a signed-out or incognito window.
+- Hover one mark in every visualisation and confirm the tooltip matches the unit.
+- Test at desktop width and at approximately 390 px wide.
+- Confirm the submitted template contains the live site URL, repository URL and sketch URL.

@@ -1,3 +1,5 @@
+// Registry linking each page container to one readable Vega-Lite JSON specification.
+// Keeping specs separate makes the required JSON easy to inspect and discuss.
 const items = [
   ['chart-stream', '14_stream'],
   ['chart-mix', '01_mix'],
@@ -15,6 +17,7 @@ const items = [
   ['map-stations', '13_station_dots']
 ];
 
+// One shared boundary source is normalised once before the four map idioms render.
 const boundaryUrl = 'https://raw.githubusercontent.com/rowanhogan/australian-states/master/states.min.geojson';
 const mappedNames = new Set([
   'New South Wales', 'Victoria', 'Queensland', 'Western Australia',
@@ -75,6 +78,7 @@ const boundaries = fetch(boundaryUrl)
   })
   .then(prepareBoundary);
 
+// Replace only the known boundary URL. Chart data files and transforms remain unchanged.
 function usePreparedBoundaries(spec, features) {
   function replaceData(node) {
     if (!node || typeof node !== 'object') return;
@@ -87,6 +91,8 @@ function usePreparedBoundaries(spec, features) {
   return spec;
 }
 
+// Load charts independently so one failed specification shows a local error rather than
+// preventing the rest of the data story from rendering.
 for (const [id, name] of items) {
   const isMap = id.startsWith('map-');
   const spec = fetch(`specs/${name}.json`).then(response => {

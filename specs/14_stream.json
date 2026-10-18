@@ -24,7 +24,7 @@
   },
   "mark": {
     "type": "area",
-    "interpolate": "monotone",
+    "interpolate": "linear",
     "opacity": 0.94
   },
   "encoding": {
@@ -105,5 +105,6 @@
         "format": ".1f"
       }
     ]
-  }
+  },
+  "description": "Zero-based stacked area chart of Australian electricity generation by source, 2015–2025. Band thickness encodes annual TWh."
 }

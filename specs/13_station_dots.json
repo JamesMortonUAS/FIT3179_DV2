@@ -20,12 +20,7 @@
   "width": "container",
   "height": 375,
   "projection": {
-    "type": "mercator",
-    "center": [
-      134,
-      -27
-    ],
-    "scale": 510
+    "type": "equalEarth"
   },
   "layer": [
     {
@@ -64,7 +59,7 @@
           "type": "quantitative"
         },
         "color": {
-          "field": "fuel",
+          "field": "fuel_label",
           "type": "nominal",
           "title": "Primary fuel",
           "scale": {
@@ -72,9 +67,9 @@
               "Fossil",
               "Wind",
               "Solar",
-              "Water",
-              "Biomass Or Waste",
-              "Wind/solar"
+              "Hydro",
+              "Biomass or waste",
+              "Wind + solar"
             ],
             "range": [
               "#da8265",
@@ -92,7 +87,7 @@
             "title": "Station"
           },
           {
-            "field": "fuel",
+            "field": "fuel_label",
             "title": "Primary fuel"
           },
           {
@@ -105,7 +100,14 @@
             "title": "State"
           }
         ]
-      }
+      },
+      "transform": [
+        {
+          "calculate": "datum.fuel == 'Water' ? 'Hydro' : datum.fuel == 'Biomass Or Waste' ? 'Biomass or waste' : datum.fuel == 'Wind/solar' ? 'Wind + solar' : datum.fuel",
+          "as": "fuel_label"
+        }
+      ]
     }
-  ]
+  ],
+  "description": "Equal-area point map of operating Australian power stations rated at 100 MW or more. Source category labels are made audience-readable at display time."
 }

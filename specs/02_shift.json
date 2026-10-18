@@ -62,9 +62,19 @@
       "title": "Share of total generation (%)",
       "scale": {
         "domain": [
-          30,
-          70
+          0,
+          100
         ]
+      },
+      "axis": {
+        "values": [
+          0,
+          25,
+          50,
+          75,
+          100
+        ],
+        "labelExpr": "datum.value + '%'"
       }
     },
     "color": {
@@ -94,5 +104,6 @@
         "title": "Share (%)"
       }
     ]
-  }
+  },
+  "description": "Compares renewable and fossil shares of Australian electricity generation in 2024 and 2025 on a complete 0–100% scale."
 }
