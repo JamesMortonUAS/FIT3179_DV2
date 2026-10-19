@@ -30,7 +30,7 @@ One terawatt-hour is 1,000 gigawatt-hours. Do not describe MW as generation.
 - Figure 03 is a **zero-based stacked area chart**, not a centred streamgraph. This lets band thickness encode TWh honestly and makes black coal start at zero.
 - Figure 02 uses a complete **0–100% axis** because it compares proportions. A truncated 30–70% axis made the 3.8-point change look larger than it was.
 - Annual observations in Figure 03 use straight joins. Smoothing was removed because it can imply values between yearly observations that were not measured.
-- Australian maps use an **Equal Earth** projection, an equal-area choice. That is more defensible for thematic area comparison than Mercator.
+- Australian maps use a consistent **Australia-centred Mercator** projection, with a fixed centre and scale. This preserves a familiar national outline and identical framing across the four map idioms; the limitation is that Mercator is not equal-area.
 - Tooltips provide precision on demand while titles and annotations carry the story without requiring interaction.
 
 ## Four map idioms

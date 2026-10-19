@@ -20,7 +20,12 @@
   "width": "container",
   "height": 375,
   "projection": {
-    "type": "equalEarth"
+    "type": "mercator",
+    "center": [
+      134,
+      -27
+    ],
+    "scale": 510
   },
   "data": {
     "url": "https://raw.githubusercontent.com/rowanhogan/australian-states/master/states.min.geojson",
@@ -81,5 +86,5 @@
       }
     ]
   },
-  "description": "Equal-area choropleth of state renewable shares in 2025."
+  "description": "Australia-centred Mercator choropleth of state renewable shares in 2025."
 }

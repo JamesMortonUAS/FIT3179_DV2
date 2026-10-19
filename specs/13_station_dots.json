@@ -20,7 +20,12 @@
   "width": "container",
   "height": 375,
   "projection": {
-    "type": "equalEarth"
+    "type": "mercator",
+    "center": [
+      134,
+      -27
+    ],
+    "scale": 510
   },
   "layer": [
     {
@@ -109,5 +114,5 @@
       ]
     }
   ],
-  "description": "Equal-area point map of operating Australian power stations rated at 100 MW or more. Source category labels are made audience-readable at display time."
+  "description": "Australia-centred Mercator point map of operating Australian power stations rated at 100 MW or more. Source category labels are made audience-readable at display time."
 }

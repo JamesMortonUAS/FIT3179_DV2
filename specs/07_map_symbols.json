@@ -20,7 +20,12 @@
   "width": "container",
   "height": 375,
   "projection": {
-    "type": "equalEarth"
+    "type": "mercator",
+    "center": [
+      134,
+      -27
+    ],
+    "scale": 510
   },
   "layer": [
     {
@@ -85,5 +90,5 @@
       }
     }
   ],
-  "description": "Equal-area proportional-symbol map of total state electricity generation in 2025."
+  "description": "Australia-centred Mercator proportional-symbol map of total state electricity generation in 2025."
 }

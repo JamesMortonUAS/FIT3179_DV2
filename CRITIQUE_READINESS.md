@@ -15,7 +15,7 @@ This checklist follows the unit's critique priority: accuracy first, then data/i
 ## Idioms and brief coverage
 
 - [x] Four map idioms: continuous choropleth, threshold/categorical map, proportional symbols and station points.
-- [x] Australian maps use an equal-area projection.
+- [x] All four Australian maps use the same centred Mercator projection and disclose its non-equal-area limitation in the interview notes.
 - [x] Fourteen Vega-Lite visualisations exceed the ten-chart minimum.
 - [x] More than two data sources are combined and credited.
 - [x] The page is a public, scrolling GitHub Pages data story.
